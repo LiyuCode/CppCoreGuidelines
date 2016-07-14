@@ -2254,7 +2254,7 @@ Passing a shared smart pointer (e.g., `std::shared_ptr`) implies a run-time cost
     void g(unique_ptr<int>);
 
     // can only accept ints for which you are willing to share ownership
-    void g(shared_ptr<int>); 
+    void g(shared_ptr<int>);
 
     // doesn't change ownership, but requires a particular ownership of the caller
     void h(const unique_ptr<int>&);
