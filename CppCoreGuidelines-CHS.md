@@ -447,19 +447,28 @@ If we wanted both absolute speed and deltas, we would have defined a `Delta` typ
 我们本可以接受一个无单位的`double`作为增量，但那容易出错。
 如果会涉及到绝对速度和速度增量，那就定义一个`Delta`类型吧。
 
-##### Enforcement
+##### Enforcement/强制执行
 
 Very hard in general.
+
+一般情况下非常困难。
 
 * use `const` consistently (check if member functions modify their object; check if functions modify arguments passed by pointer or reference)
 * flag uses of casts (casts neuter the type system)
 * detect code that mimics the standard library (hard)
 
-### <a name="Rp-Cplusplus"></a>P.2: Write in ISO Standard C++
 
-##### Reason
+* 持续使用 `const` （用来检查是否有成员函数修改了变量值；检查是否有函数修改了经指针或引用传入的参数）
+* 标志强制类型转换的使用地方 （强制类型转换 neuter /CHS 类型系统）
+* 检测模仿标准库某些函数的代码（这个困难）
+
+### <a name="Rp-Cplusplus"></a>P.2: Write in ISO Standard C++ / 用ISO标准C++来编写代码
+
+##### 原因
 
 This is a set of guidelines for writing ISO Standard C++.
+
+这有一整套的如何编写ISO标准C++的指南。
 
 ##### Note
 
